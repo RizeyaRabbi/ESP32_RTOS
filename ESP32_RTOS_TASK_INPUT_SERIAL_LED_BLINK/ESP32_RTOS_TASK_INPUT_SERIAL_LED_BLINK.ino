@@ -21,7 +21,7 @@ void ledBlink(void *parameter)
         /*
         if (millis() - startTime >= 5000)
         {
-            unsigned int temp1 = uxTaskGetStackHighWaterMark(nullptr);
+            unsigned int temp1 = uxTaskGetStackHighWaterMark(NULL);
             Serial.print("ledBlink Stack Free:");
             Serial.print(temp1);
             Serial.print("\n");
@@ -64,7 +64,7 @@ void readSerial(void *parameter)
         /*
         if (millis() - startTime2 >= 5000)
         {
-            unsigned int temp1 = uxTaskGetStackHighWaterMark(nullptr);
+            unsigned int temp1 = uxTaskGetStackHighWaterMark(NULL);
             Serial.print("ReadSerial Stack Free:");
             Serial.print(temp1);
             Serial.print("\n");
